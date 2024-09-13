@@ -1,6 +1,5 @@
 import Header from "./Basic/index";
 import SubMenu from "./Basic/menuBar";
-import Image from "next/image";
 import UTAS from "./Basic/UTokyo";
 
 import './styles/format.css'

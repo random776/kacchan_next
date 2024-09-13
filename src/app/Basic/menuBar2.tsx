@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 export default function SubMenu2() {
     return (
@@ -6,7 +6,7 @@ export default function SubMenu2() {
         {/* <!-- 以下メニューバー --> */}
     <div className="sub_menu">
       <div className="logo2">
-        <Image className="logo_area2" src="/logoimage.jpeg" alt="" />
+        <img className="logo_area2" src="/logoimage.jpeg" alt="" />
       </div>
       <div className="header2">
         <header>

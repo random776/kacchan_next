@@ -1,8 +1,4 @@
-import Oarai from "/oarai.jpg"
-import Jobansen from "/jobansen.jpg"
-import MitoTrain from "/mito_train.jpg"
-import Otonebashi from "/otonebashi.jpg"
-import Logo from "/logoimage.jpeg"
+
 
 export default function Header2() {
     return (
@@ -32,7 +28,7 @@ export default function Header2() {
         </div>
         <div className="logo-area">
           <a href="../"
-            ><img className="logo" src={Logo} alt=""
+            ><img className="logo" src="/logoimage.jpeg" alt=""
           /></a>
         </div>
       </div>
@@ -49,10 +45,10 @@ export default function Header2() {
         </ul>
       </div>
       <div className="slide">
-      <img className="item1" src={Oarai} alt="A" />
-        <img className="item2" src={Jobansen} alt="B" />
-        <img className="item3" src={MitoTrain} alt="C" />
-        <img className="item4" src={Otonebashi} alt="D" />
+      <img className="item1" src="/oarai.jpg" alt="A" />
+        <img className="item2" src="/jobansen.jpg" alt="B" />
+        <img className="item3" src="/mito_train.jpg" alt="C" />
+        <img className="item4" src="/otonebashi.jpg" alt="D" />
       </div>
     </header>
         </>

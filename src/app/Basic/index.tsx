@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 export default function Header() {
     return (
@@ -28,7 +28,7 @@ export default function Header() {
         </div>
         <div className="logo-area">
           <a href="./"
-            ><img className="logo" src="logoimage.jpeg" alt=""
+            ><img className="logo" src="/logoimage.jpeg" alt=""
           /></a>
         </div>
       </div>
@@ -46,9 +46,9 @@ export default function Header() {
       </div>
       <div className="slide">
         <img className="item1" src="/oarai.jpg" alt="A" />
-        <img className="item2" src="jobansen.jpg" alt="B" />
-        <img className="item3" src="mito_train.jpg" alt="C" />
-        <img className="item4" src="otonebashi.jpg" alt="D" />
+        <img className="item2" src="/jobansen.jpg" alt="B" />
+        <img className="item3" src="/mito_train.jpg" alt="C" />
+        <img className="item4" src="/otonebashi.jpg" alt="D" />
       </div>
     </header>
         </>
