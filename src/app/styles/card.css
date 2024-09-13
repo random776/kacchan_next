@@ -1,0 +1,104 @@
+.card {
+    width: auto;
+    width: 100%;
+    position: relative;
+  }
+  
+  .card__imgframe {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+  
+  .card__textbox {
+    width: 100%;
+    height: auto;
+    padding: 15px 15px;
+    background: #ffffff;
+    box-sizing: border-box;
+  }
+  .card__textbox > * + * {
+    margin-top: 10px;
+  }
+  .card__titletext {
+    margin: 5px 0px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 125%;
+  }
+  .card__overviewtext {
+    margin: 15px 0px;
+    font-size: 13px;
+    line-height: 150%;
+  }
+  .card__utokyo {
+    font-size: 14px; 
+    margin: 0px;
+  }
+  .card__utokyo__day {
+    font-size: 18px;
+    padding: 2px 2px 2px 0px;
+    color: blueviolet;
+  }
+  
+  .card-skin {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-url {
+    font-size: 13px;
+    margin: 10px;
+    position: absolute;
+    bottom: 10px;
+  }
+  
+  .card_format {
+    display: inline-block;
+    margin: 5px;
+  }
+  
+  @media screen and (max-width: 594px) {
+    .card_style {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    .card {
+      height: 350px;
+    }
+  }
+  
+  @media screen and (min-width: 594px) {
+    .card_style {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .card {
+      height: 300px;
+    }
+  }
+  
+  @media screen and (min-width: 960px) {
+    .card_style {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+    }
+    .card {
+      height: 300px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .card_style {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+    .card {
+      height: 300px;
+    }
+  }

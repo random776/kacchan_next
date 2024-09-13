@@ -1,0 +1,59 @@
+#oshirase a {
+  color: black;
+  text-decoration: none;
+}
+
+.date {
+  font-weight: 500;
+  border: none;
+}
+
+.hr {
+  height: 1.5px;
+  background-color: rgb(41,41,41);
+  border: none;
+}
+
+@media screen and (max-width: 767px) {
+  #oshirase {
+    font-size: 80%;
+  }
+  #oshirase h2 {
+    font-size: 160%;
+    /* 親要素のfont-sizeからの相対値 */
+  }
+
+  #oshirase span {
+    padding: 5px 10px;
+    display: block;
+  }
+
+  #oshirase-viewer {
+    background-color: rgb(220, 220, 220);
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  #oshirase {
+    font-size: 95%;
+  }
+  #oshirase h2 {
+    font-size: 160%;
+  }
+
+  #oshirase span {
+    padding: 10px 0px;
+  }
+
+  #oshirase-viewer {
+    background-color: rgb(220, 220, 220);
+    padding: 20px 60px;
+  }
+  .page_update {
+    display: flex;
+  }
+  .date {
+    width: 20%;
+  }
+}
