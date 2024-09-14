@@ -1,0 +1,82 @@
+#news {
+    border: 1px solid black;
+    height: 400px;
+    overflow: scroll;
+  }
+
+  #news_oshirase a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .news_date {
+    font-weight: 500;
+  }
+
+  /* 記事用トピック欄 */
+  .topic {
+    padding: 2px 10px;
+    background-color: rgb(222, 222, 222);
+    border-radius: 5px;
+  }
+  /* work.html用トピック欄 */
+  .topic2 {
+    padding: 2px;
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(222, 222, 222);
+    border-radius: 5px;
+  }
+
+  /* 各記事のためのコーナー */
+  .img {
+    width: 100%; 
+    max-width: 767px;
+  }
+
+  .img2 {
+    width: 100%; 
+    max-width: 467px;
+  }
+
+  @media screen and (max-width:767px) {
+    #news_oshirase {
+      font-size: 85%;
+    }
+  
+  .news_date {
+      padding: 5px;
+      display: block;
+    }
+  
+  #news_oshirase-viewer {
+    background-color: white;
+    padding: 10px;
+  }
+  .topic2 {
+    display: inline;
+    margin: 8px 20px 8px 10px;
+  }
+  }
+  
+  @media screen and (min-width:767px) {
+    #news_oshirase {
+        font-size: 95%;
+      }
+    
+    .news_date {
+        padding: 10px;
+        display: inline;
+      }
+
+    
+    #news_oshirase-viewer {
+      background-color: white;
+      padding: 10px;
+    }
+    .topic2 {
+      display: inline;
+      margin: 8px 20px 8px 10px;
+    }
+    }
+  

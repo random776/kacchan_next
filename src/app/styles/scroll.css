@@ -1,0 +1,34 @@
+/** 省略してます **/
+
+body {
+  --scroll-gap: 30px;
+}
+
+@keyframes infiniteScroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(calc(-100% - var(--scroll-gap) / 2));
+    }
+  }
+
+  .scroll_track {
+    width: max-content;
+    min-width: 100%;  
+    animation: infiniteScroll 15s linear infinite;
+  }
+
+.scroll_box {
+  overflow: hidden;
+  height: 22.5px;
+  padding: 5px;
+  border: 2px solid rgb(0, 147, 155);
+  background: rgb(243, 243, 243);
+  border-radius: 3px;
+  
+}
+
+.scroll_cont {
+  white-space: nowrap;
+}

@@ -97,6 +97,17 @@ export default function Result() {
             </p>
           </li>
         </ul>
+        <h2 className="color2">地球惑星物理学科専門科目「地球惑星物理学観測実習」</h2>
+        <ul>
+          <li>
+            地震波データを用いた屈折法構造探索ツール（水平n層モデル）
+            <p>
+              <a href="https://jishinha.vercel.app/">
+              https://jishinha.vercel.app/
+              </a>
+            </p>
+          </li>
+        </ul>
       </div>
       <SubMenu />
     </>
