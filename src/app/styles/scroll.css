@@ -16,7 +16,7 @@ body {
   .scroll_track {
     width: max-content;
     min-width: 100%;  
-    animation: infiniteScroll 15s linear infinite;
+    animation: infiniteScroll 30s linear infinite;
   }
 
 .scroll_box {
@@ -30,5 +30,6 @@ body {
 }
 
 .scroll_cont {
+  padding: 0px 150px; 
   white-space: nowrap;
 }

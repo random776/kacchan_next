@@ -14,7 +14,7 @@ export default function Result() {
         <Header />
         <div className="sonota">
             <h2 className="color">共通テスト予想問題</h2>
-            <p>共通テスト予想問題（笑）の作成中です。パロディー程度のものなので、共通テスト対策としての実用性は皆無です。期待していた方がいらっしゃったら謝るけれども、いるわけないので謝らない。</p>
+            <p>共通テスト予想問題（笑）の作成中です。パロディー程度のものなので、共通テスト対策としての実用性は皆無です。</p>
             <ul className="height">
                 <li><a href="https://random776.github.io/kacchan-uts2-22/pdf/butsuri.pdf">物理(105KB)</a></li>
                 <li><a href="https://random776.github.io/kacchan-uts2-22/pdf/ibaraki.pdf">大都会イバラキスタン(452KB)</a></li>

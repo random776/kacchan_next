@@ -30,7 +30,7 @@
 
   #oshirase-viewer {
     background-color: rgb(220, 220, 220);
-    padding: 20px;
+    padding: 10px;
   }
 }
 
@@ -48,7 +48,7 @@
 
   #oshirase-viewer {
     background-color: rgb(220, 220, 220);
-    padding: 20px 60px;
+    padding: 10px 30px;
   }
   .page_update {
     display: flex;

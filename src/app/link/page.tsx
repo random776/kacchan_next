@@ -14,7 +14,7 @@ export default function Result() {
         <Header />
         <div className="sonota">
             <h2 className="color">外部リンク</h2>
-            <p>中の人がお好みで貼った外部リンクになります。</p>
+            <p>お好みで貼った外部リンクです。</p>
             <ul className="height">
                 <li><a href="https://www.u-tokyo.ac.jp/ja/index.html">東京大学公式サイト</a></li>
                 <li><a href="https://utas.adm.u-tokyo.ac.jp/campusweb/campusportal.do">UTAS</a></li>

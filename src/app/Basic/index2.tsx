@@ -13,13 +13,7 @@ export default function Header2() {
             <header>
               <ul>
               <li><a href="../" className="btn4">HOME</a></li>
-                <li><a href="../news" className="btn4">ニュース</a></li>
-                <li><a href="../contact" className="btn4">連絡先（SNS）</a></li>
-                <li>
-                  <a href="../helpful" className="btn4"
-                    >東大理系生お役立ちツール</a
-                  >
-                </li>
+                <li><a href="../hakidame" className="btn4">掃き溜め</a></li>
                 <li><a href="../link" className="btn4">外部リンク</a></li>
                 <li><a href="../test" className="btn4">共通テスト対策</a></li>
               </ul>
@@ -28,18 +22,14 @@ export default function Header2() {
         </div>
         <div className="logo-area">
           <a href="../"
-            ><img className="logo" src="/logoimage.jpeg" alt=""
+            ><img className="logo" src="/logoimage_2.jpeg" alt=""
           /></a>
         </div>
       </div>
       <div id="menu-bar">
         <ul>
           <li><a href="../" className="btn4">HOME</a></li>
-          <li><a href="../news" className="btn4">ニュース</a></li>
-          <li><a href="../contact" className="btn4">連絡先（SNS）</a></li>
-          <li>
-            <a href="../helpful" className="btn4">東大理系生お役立ちツール</a>
-          </li>
+          <li><a href="../hakidame" className="btn4">掃き溜め</a></li>
           <li><a href="../link" className="btn4">外部リンク</a></li>
           <li><a href="../test" className="btn4">共通テスト対策</a></li>
         </ul>

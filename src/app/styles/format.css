@@ -5,7 +5,7 @@ body {
   header {
     color: #fff;
     padding: 0px;
-    background-color: black;
+    background-color: #8ffdf1;
   }
   
   /* ロゴに関する部分 */
@@ -41,7 +41,7 @@ body {
   
   /* メニューバーに関する部分 */
   #menu-bar {
-    background-color: rgb(0, 166, 255, 0.813);
+    background-color: rgba(12, 70, 0, 0.547);
   }
   
   #menu-bar ul {
@@ -63,7 +63,7 @@ body {
   /* ハンバーガーメニューに関する部分 */
   #nav-content ul {
     width: 100%;
-    background-color: rgb(0, 166, 255, 0.813);
+    background-color: rgba(12, 70, 0, 0.547);
   }
   
   #nav-content ul li a {
@@ -72,7 +72,14 @@ body {
   .sonota {
     margin: 10px;
   }
-  
+
+  .sonota li {
+    list-style-position: inside;
+    line-height: 1.5;
+    padding-left: 0px; /* マーカーとテキストの間隔を調整 */
+  }
+
+
   #nav-drawer {
     position: relative;
     padding: 30px;
@@ -99,7 +106,7 @@ body {
     height: 3px; /*線の太さ*/
     width: 25px; /*長さ*/
     border-radius: 3px;
-    background: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
     display: block;
     content: "";
     cursor: pointer;
@@ -155,7 +162,7 @@ body {
   
   /* ボタンここから */
   .btn4 {
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: center;
     position: relative;
     text-decoration: none;
@@ -201,6 +208,7 @@ body {
   .slide {
     position: relative;
     width: 100%;
+    border-radius: 0% 0% 1% 1%;
     padding-top: 41.7%;
     overflow: hidden;
     margin: 0 auto;
@@ -320,7 +328,7 @@ body {
   /* 以下は下部メニューバー */
   
   .sub_menu {
-    background-color: black;
+    background-color: #8ffdf1;
     height: 100%;
   }
   .logo2 {
@@ -338,13 +346,13 @@ body {
     text-align: center;
   }
   .header2 a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     margin: 15px;
   }
   .under {
     text-align: center; 
-    color: white; 
+    color: rgb(0, 0, 0); 
     padding: 15px;
   }
   @media screen and (max-width: 767px) {
