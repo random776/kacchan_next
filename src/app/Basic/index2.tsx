@@ -26,6 +26,11 @@ export default function Header2() {
                       </a>
                     </li>
                     <li>
+                      <a href="../chibutsu" className="btn4">
+                        地物関連
+                      </a>
+                    </li>
+                    <li>
                       <a href="../link" className="btn4">
                         外部リンク
                       </a>
@@ -60,6 +65,11 @@ export default function Header2() {
             <li>
               <a href="../hakidame" className="btn4">
                 掃き溜め
+              </a>
+            </li>
+            <li>
+              <a href="../chibutsu" className="btn4">
+                地物関連
               </a>
             </li>
             <li>

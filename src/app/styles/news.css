@@ -28,6 +28,14 @@
     border-radius: 5px;
   }
 
+  .section_box {
+    background-color: rgb(199, 255, 255);
+    padding: 10px;
+    font-size: smaller;
+    border-radius: 3px ;
+    line-height: 1.4;
+  }
+
   /* 各記事のためのコーナー */
   .img {
     width: 100%; 
@@ -37,6 +45,16 @@
   .img2 {
     width: 100%; 
     max-width: 467px;
+  }
+
+  .math {
+    height: 55px;
+    max-width: 80%;
+  }
+
+  .content {
+    line-height: 1.6;
+    margin: 3px;
   }
 
   @media screen and (max-width:767px) {
