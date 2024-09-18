@@ -1,5 +1,10 @@
 import Header from "./Basic/index";
 import SubMenu from "./Basic/menuBar";
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: '地物学科かっちゃんの物理と雑多なことの掃き溜め',
+}
 
 import "./styles/format.css";
 import "./styles/style.css";
