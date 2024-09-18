@@ -7,6 +7,10 @@ import "../../styles/style.css";
 import "../../styles/card.css";
 import "../../styles/notice.css";
 import "../../styles/news.css";
+import 'katex/dist/katex.min.css';
+
+import MathRenderer from '../../Basic/MathRenderer'
+
 
 export default function Result() {
   return (
@@ -34,14 +38,14 @@ export default function Result() {
             <li>
               高校物理で出てくる物理法則の例：重力に従う物体の運動方程式
               <div>
-                <img className="math" src="/ma=mg.jpg" />
+                <MathRenderer equation={"m \\bm{a} = m \\bm{g}"} block={true} />
               </div>
               物体の落下などの挙動は、この式と初期条件（初速や位置など）によって予測できる。
             </li>
             <li>
               地球惑星物理で出てくる物理法則の例：ナヴィエ・ストークス方程式
               <div>
-                <img className="math" src="/nabie-stokusu.jpg" />
+              <MathRenderer equation={"\\frac{\\partial \\boldsymbol{u}}{\\partial t} + (\\boldsymbol{u} \\cdot \\nabla) \\boldsymbol{u} = - \\frac{1}{\\rho} \\nabla p + \\nu \\nabla^2 \\boldsymbol{u}"} block={true} />
               </div>
               気体や液体などの流体の速度と、圧力や粘性との関係を表したもの。少し難しいので、こんなものがあるんだ〜、と思っていただきたい。
             </li>
