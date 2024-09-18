@@ -99,26 +99,6 @@ export default function Result() {
             </div>
           </div>
           {/* <!--  --> */}
-          <div className="card_format">
-            <div className="card card-skin">
-              <div className="card__textbox">
-                <div className="card__titletext">
-                  地球惑星物理学入門試験持ち込み資料
-                </div>
-                <div className="card__overviewtext">
-                  2023年度かっちゃん試験持ち込み資料(159KB) です。
-                </div>
-                <span className="card-url">
-                  <a
-                    href="https://random776.github.io/kacchan-uts2-22/pdf/chibutsu_nyumon.pdf"
-                    className="btn4"
-                  >
-                    ページを開く
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
           </div>
 
           <h2 className="color2">進学選択関連</h2>
