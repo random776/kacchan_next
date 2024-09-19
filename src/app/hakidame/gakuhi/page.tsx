@@ -9,7 +9,6 @@ import "../../styles/notice.css";
 import "../../styles/news.css";
 import "katex/dist/katex.min.css";
 
-import MathRenderer from "../../Basic/MathRenderer";
 
 export default function Result() {
   return (
