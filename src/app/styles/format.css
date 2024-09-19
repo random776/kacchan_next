@@ -162,7 +162,6 @@ body {
   /* ボタンここから */
   .btn4 {
     /* text-transform: uppercase; */
-    text-align: center;
     position: relative;
     text-decoration: none;
     display: inline-block;
