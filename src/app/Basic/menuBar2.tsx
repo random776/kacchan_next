@@ -10,7 +10,7 @@ export default function SubMenu2() {
           <header>
             <div className="header3">
               <a href="../">HOME</a>
-              <a href="../news">ニュース</a>
+              <a href="../hakidame">掃き溜め</a>
               <a href="../chibutsu">地物関連</a>
             </div>
             <div className="header3">
