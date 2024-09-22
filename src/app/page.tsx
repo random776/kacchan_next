@@ -119,7 +119,7 @@ export default function Home() {
         ></script>
         <h2 className="color">最近の記事</h2>
         <ul>
-          <li>2024年9月20日： <a className="btn4" href="./hakidame/gakuhi">授業料値上げ報道に関する私見：学生自治会よ、本当に「対話」する気はあるのか</a></li>
+          <li>2024年9月20日： <a className="btn4" href="./hakidame/gakuhi">授業料値上げ報道に関する私見：学生自治会の「対話」姿勢を問う</a></li>
           <li>2024年9月19日： <a className="btn4" href="./chibutsu/simulation">五月祭展示：シミュレーション科学の世界へようこそ</a></li>
         </ul>
       </div>
