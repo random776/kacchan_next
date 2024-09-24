@@ -21,8 +21,15 @@ export default function Result() {
   return (
     <>
       <Head>
-        <meta name="twitter:title" content="授業料値上げ報道に関する私見：学生自治会の「対話」姿勢を問う" />
-        <meta name="twitter:description" content="東京大学の授業料値上げ報道に関して、学生自治会などは「対話」に消極的であると大学側を批判しています。しかし、自治会側の「対話」姿勢に問題はないのでしょうか。それを含めて、今回の値上げ報道に関する私見を述べます。" />
+        <meta name="twitter:card" content="summary"></meta>
+        <meta
+          name="twitter:title"
+          content="授業料値上げ報道に関する私見：学生自治会の「対話」姿勢を問う"
+        />
+        <meta
+          name="twitter:description"
+          content="東京大学の授業料値上げ報道に関して、学生自治会などは「対話」に消極的であると大学側を批判しています。しかし、自治会側の「対話」姿勢に問題はないのでしょうか。それを含めて、今回の値上げ報道に関する私見を述べます。"
+        />
       </Head>
       <Header2 />
       <div className="sonota">
