@@ -36,6 +36,13 @@
     line-height: 1.4;
   }
 
+  .section_box2 {
+    background-color: rgb(218, 255, 199);
+    padding: 10px;
+    border-radius: 3px ;
+    line-height: 1.4;
+  }
+
   /* 各記事のためのコーナー */
   .img {
     width: 100%; 

@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.1",
+    "@mui/styled-engine-sc": "^6.1.1",
     "better-react-mathjax": "^2.0.3",
     "katex": "^0.16.11",
     "mathjax-react": "^2.0.1",
@@ -18,7 +22,8 @@
     "react-katex": "^3.0.1",
     "react-markdown": "^9.0.1",
     "rehype-katex": "^7.0.1",
-    "remark-math": "^6.0.0"
+    "remark-math": "^6.0.0",
+    "styled-components": "^6.1.13"
   },
   "devDependencies": {
     "@types/node": "^20",

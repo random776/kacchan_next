@@ -66,3 +66,11 @@ body {
   .height {
     line-height: 30px;
   }
+
+  .content img {
+    max-width: 100%;
+  }
+
+  .content textarea {
+    max-width: 100%;
+  }

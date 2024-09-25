@@ -114,18 +114,10 @@ export default function Result() {
                 </div>
                 <span className="card-url">
                   <a
-                    href="https://kihonheikin-calculator.onrender.com"
+                    href="./hakidame/kihon-heikin"
                     className="btn4"
                   >
                     ページを開く
-                  </a>
-                </span>
-                <span className="card-url" style={{ left: "120px" }}>
-                  <a
-                    href="https://github.com/random776/kihonheikin2"
-                    className="btn4"
-                  >
-                    ソースコードを見る
                   </a>
                 </span>
               </div>
