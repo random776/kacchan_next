@@ -29,7 +29,8 @@ export default function UploadMarkdown({ onFileContentChange }: MarkdownProps) {
     if (e.currentTarget?.files && e.currentTarget.files[0]) {
       const targetFile = e.currentTarget.files[0];
       setTextFile(targetFile);
-      localStorage.setItem('filename', targetFile.name); // ファイル名を保存 -> ファイルを新規保存する際に使う。
+      // localStorage.setItem('filename', targetFile.name); // ファイル名を保存 -> ファイルを新規保存する際に使う。
+      localStorage.removeItem("filename")
 
       // FileReaderを使ってファイルの内容を読み込む
       const reader = new FileReader();
