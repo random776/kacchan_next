@@ -58,7 +58,7 @@ export default function Result() {
     });
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
-    link.download = localStorage.getItem("filename") ?? "hoge.md"; // localStorage上に保存したファイル名を使う。
+    link.download = localStorage.getItem("filename") ?? "kihon-heikin.md"; // localStorage上に保存したファイル名を使う。
     link.click();
   };
 
