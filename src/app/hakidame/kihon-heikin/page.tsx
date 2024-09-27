@@ -11,7 +11,7 @@ import "katex/dist/katex.min.css";
 
 import UploadMarkdown from "../../Basic/uploadMarkdown";
 import { useState } from "react";
-import { Button } from "@mui/material";
+import { Button, Input } from "@mui/material";
 
 type resultType =
   | { title: string; value1: number; value2: number; value3: number }[]
@@ -21,6 +21,7 @@ export default function Result() {
   const [inputData, setInputData] = useState("");
   const [, setResults] = useState<resultType>([]);
   const [average, setAverage] = useState<number | null>(null); // 計算結果を保持
+  const [fileName, setFileName] = useState<null | string>(null);
 
   const handleCalculate = (data: string) => {
     const rows = data
@@ -47,19 +48,31 @@ export default function Result() {
       weightedScore += value1 * value2 * value3;
     });
 
-    const calculatedAverage = totalWeight !== 0 ? weightedScore / totalWeight : NaN;
+    const calculatedAverage =
+      totalWeight !== 0 ? weightedScore / totalWeight : NaN;
     setResults(data); // パースしたデータをセット
     setAverage(calculatedAverage);
   };
 
   const saveFile = () => {
-    const blob = new Blob([inputData], {
-      type: ".md, text/markdown",
-    });
-    const link = document.createElement("a");
-    link.href = URL.createObjectURL(blob);
-    link.download = localStorage.getItem("filename") ?? "kihon-heikin.md"; // localStorage上に保存したファイル名を使う。
-    link.click();
+    if (/[^a-zA-Z0-9-_]/.test(fileName ?? "")) {
+      alert("ファイル名には英数字、ハイフン、アンダースコアのみを使用してください。");
+      return;
+    }
+  
+    if (
+      window.confirm(
+        "入力画面が空白である場合、点数データが消えてしまうことがあります。本当にファイルを保存しますか？"
+      )
+    ) {
+      const blob = new Blob([inputData], {
+        type: ".md, text/markdown",
+      });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = `${fileName ?? "kihon-heikin"}.md`;
+      link.click();
+    }
   };
 
   const handleFileUpload = (content: string) => {
@@ -74,24 +87,38 @@ export default function Result() {
         <h2 className="color">基本平均点簡易計算ツール</h2>
         <p>最終更新：2024年9月26日</p>
         <div className="section_box">
-          基本平均点を概算したいときにサクッと計算するためのツール(2代目、初代は<a className="btn4" href="https://kihonheikin-calculator.onrender.com/">こちら</a>)です。
-          指定の形式のファイル(拡張子 .md)をアップロード・保存できます。実際にスマホで打ち込もうとすると意外と疲れるので、パソコン推奨です。
+          基本平均点を概算したいときにサクッと計算するためのツール(2代目、初代は
+          <a
+            className="btn4"
+            href="https://kihonheikin-calculator.onrender.com/"
+          >
+            こちら
+          </a>
+          )です。 指定の形式のファイル(拡張子
+          .md)をアップロード・保存できます。実際にスマホで打ち込もうとすると意外と疲れるので、パソコン推奨です。
         </div>
         <div className="content">
           <p>「科目名 単位数 点数 重率」の順番で入力してください。</p>
           <p>入力例 (実際にコピペしてみてください)</p>
           <div className="section_box2">
-            <div><code>おふとぅん概論 2 95 1</code></div>
-            <div><code>睡眠基礎演習 2 85 0.1</code></div>
+            <div>
+              <code>おふとぅん概論 2 95 1</code>
+            </div>
+            <div>
+              <code>睡眠基礎演習 2 85 0.1</code>
+            </div>
           </div>
           <p>このとき、基本平均点は、94.0909 点 となります。</p>
-          <p>入力内容を (ローカル環境に) 保存したい場合は「保存」を、保存したファイルを再度利用したい場合は「ファイルを選択」を、入力内容を消去したい場合は「消去」を押してください。</p>
-          
+          <p>
+            入力内容を (ローカル環境に)
+            保存したい場合は「保存」を、保存したファイルを再度利用したい場合は「ファイルを選択」を、入力内容を消去したい場合は「消去」を押してください。
+          </p>
+
           <div className="upload_save">
             <Button onClick={saveFile}>保存</Button>
             <UploadMarkdown onFileContentChange={handleFileUpload} />
           </div>
-          
+
           <textarea
             rows={10}
             cols={50}
@@ -105,10 +132,26 @@ export default function Result() {
 
           <div>
             {isNaN(average ?? NaN) ? (
-              <p>入力は無効です。</p>
+              <p>求めた基本平均点：<span className="result-alert">入力は無効です。</span></p>
             ) : (
-              <p>求めた基本平均点：{orgRound(average ?? 0, 10000)} 点</p>
+              <p>求めた基本平均点：<span className="result-visual">{orgRound(average ?? 0, 10000)}</span> 点</p>
             )}
+          </div>
+          <div>
+            保存するファイル名（デフォルトでは、<code>kihon-heikin.md</code>{" "}
+            です。
+          </div>
+          <div>
+            <Input
+              placeholder="ファイル名を入力"
+              onChange={(event) => {
+                setFileName(event.target.value);
+                if (event.target.value === "") {
+                  setFileName(null);
+                }
+              }}
+            />
+            .md
           </div>
         </div>
       </div>

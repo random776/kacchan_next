@@ -74,3 +74,12 @@ body {
   .content textarea {
     max-width: 100%;
   }
+
+  .result-alert {
+    color: red;
+  }
+
+  .result-visual {
+    color: blue;
+    font-size: 1.2rem;
+  } 
