@@ -139,7 +139,7 @@ export default function Result() {
           </div>
           <div>
             保存するファイル名（デフォルトでは、<code>kihon-heikin.md</code>{" "}
-            です。
+            です。）
           </div>
           <div>
             <Input
