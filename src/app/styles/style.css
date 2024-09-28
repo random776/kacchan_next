@@ -83,3 +83,9 @@ body {
     color: blue;
     font-size: 1.2rem;
   } 
+
+  .content blockquote {
+      position:relative;
+      border-left:3px solid #85c3da;
+      padding-left :20px;
+  }
