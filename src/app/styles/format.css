@@ -203,6 +203,7 @@ body {
     border-bottom: 2px solid #8daaff;
   }
   /* 写真スライドここから */
+
   .slide {
     position: relative;
     width: 100%;
@@ -211,6 +212,7 @@ body {
     overflow: hidden;
     margin: 0 auto;
   }
+
   .item1,
   .item2,
   .item3,
@@ -223,17 +225,33 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .slide img {
+    width: 100%;
+  }
+
+  .caption {
+    position: absolute; /* キャプションを画像の上に重ねる */
+    bottom: 15px; /* 画像の下から10pxの位置に配置 */
+    right: 15px; /* 左端から10pxの位置に配置 */
+    color: white; /* テキストの色 */
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒背景 */
+    padding: 11px 11px; /* キャプションに内側の余白をつける */
+    border-radius: 5px; /* 角を少し丸める */
+    font-size: 16px; /* 文字サイズ */
+  }
+
   .item1 {
-    animation: slide1 40s infinite;
+    animation: slide1 25s infinite;
   }
   .item2 {
-    animation: slide2 40s infinite;
+    animation: slide2 25s infinite;
   }
   .item3 {
-    animation: slide3 40s infinite;
+    animation: slide3 25s infinite;
   }
   .item4 {
-    animation: slide4 40s infinite;
+    animation: slide4 25s infinite;
   }
   @keyframes slide1 {
     0% {
@@ -248,7 +266,7 @@ body {
     }
     40% {
       opacity: 0;
-      transform: scale(1.1);
+      transform: scale(1);
     }
     90% {
       opacity: 0;
@@ -264,7 +282,7 @@ body {
     }
     30% {
       opacity: 0;
-      transform: scale(1.1);
+      transform: scale(1);
     }
     40% {
       opacity: 1;
@@ -296,7 +314,7 @@ body {
     }
     90% {
       opacity: 0;
-      transform: scale(1.1);
+      transform: scale(1);
     }
     100% {
       opacity: 0;
@@ -308,7 +326,7 @@ body {
     }
     70% {
       opacity: 0;
-      transform: scale(1.1);
+      transform: scale(1);
     }
     80% {
       opacity: 1;

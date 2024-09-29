@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <>
-      <header>
+      <header className="container">
         <div className="header-logo-menu">
           <div id="nav-drawer">
             <section className="tours">
@@ -85,10 +85,22 @@ export default function Header() {
           </ul>
         </div>
         <div className="slide">
-          <img className="item1" src="/oarai.jpg" alt="A" />
-          <img className="item2" src="/jobansen.jpg" alt="B" />
-          <img className="item3" src="/mito_train.jpg" alt="C" />
-          <img className="item4" src="/otonebashi.jpg" alt="D" />
+          <div className="item1">
+            <img src="/oarai.jpg" alt="A" />
+            <div className="caption">大洗磯前神社（大洗町）</div>
+          </div>
+          <div className="item2">
+            <img src="/jobansen.jpg" alt="B" />
+            <div className="caption">水戸駅の夕暮れと常磐線</div>
+          </div>
+          <div className="item3">
+            <img src="/mito_train.jpg" alt="C" />
+            <div className="caption">桜川と常磐線（水戸市）</div>
+          </div>
+          <div className="item4">
+            <img src="/otonebashi.jpg" alt="D" />
+            <div className="caption">利根川と県境（取手市）</div>
+          </div>
         </div>
       </header>
     </>
