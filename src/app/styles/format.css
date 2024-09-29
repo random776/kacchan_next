@@ -238,7 +238,6 @@ body {
     background-color: rgba(0, 0, 0, 0.5); /* 半透明の黒背景 */
     padding: 11px 11px; /* キャプションに内側の余白をつける */
     border-radius: 5px; /* 角を少し丸める */
-    font-size: 16px; /* 文字サイズ */
   }
 
   .item1 {
@@ -384,6 +383,9 @@ body {
       font-size: 0.8rem;
       word-break: keep-all;
     }
+    .caption {
+      font-size: 11px; /* 文字サイズ */
+    }
 
     /* ポップアップに関する部分（新設） */
   .popup {
@@ -458,6 +460,9 @@ body {
     }
     .header3 {
       display: inline;
+    }
+    .caption {
+      font-size: 16px; /* 文字サイズ */
     }
 
   }
