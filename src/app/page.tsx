@@ -94,13 +94,10 @@ export default function Home() {
             </a>
           </li>
           <li>
-            Twitterのアイコン：
+            Twitterのプロフ写真：
             <ul>
               <li>
-                「いずちゃん」という名前が（一応）ついている。伊豆の自転車旅行の際に晴れることを祈願したものである。
-              </li>
-              <li>
-                プロフ写真は水戸駅北口側からの映像だが、筆者は別に水戸出身ではない。まあでも茨城と言ったら水戸である。
+                水戸駅北口側からの映像だが、筆者は別に水戸出身ではない。まあでも茨城と言ったら水戸である。
               </li>
             </ul>
           </li>
@@ -122,8 +119,9 @@ export default function Home() {
         ></script>
         <h2 className="color">最近の記事</h2>
         <ul>
+        <li>2024年10月04日： <a className="btn4" href="https://kacchan-docs.vercel.app/">地球科学や物理・プログラミング関連のことはこちらに移転</a></li>
           <li>2024年9月20日： <a className="btn4" href="./hakidame/gakuhi">授業料値上げ報道に関する私見：学生自治会の「対話」姿勢を問う</a></li>
-          <li>2024年9月19日： <a className="btn4" href="./chibutsu/simulation">五月祭展示：シミュレーション科学の世界へようこそ</a></li>
+          <li>2024年9月19日： <a className="btn4" href="https://kacchan-docs.vercel.app/docs/physics/gogatsusai">五月祭展示：シミュレーション科学の世界へようこそ</a></li>
         </ul>
       </div>
       <SubMenu />
