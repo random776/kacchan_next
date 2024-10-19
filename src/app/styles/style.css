@@ -98,5 +98,6 @@ body {
   @media screen and (max-width: 560px) {
     .content img {
       width: 100%;
+      margin: 0%;
     }
     }
