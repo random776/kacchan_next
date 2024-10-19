@@ -288,6 +288,24 @@ export default function Result() {
             </div>
           </div>
         </div>
+        {/* <!--  --> */}
+        <div className="card_format">
+          <div className="card card-skin">
+            <div className="card__textbox">
+              <div className="card__titletext">
+              授業料値上げ案提出報道に関する私見②
+              </div>
+              <div className="card__overviewtext">
+              東京大学の授業料値上げの方針を決定したのち、一部の学生団体が訴えている「学生自治の再建」についての私見です。
+              </div>
+              <span className="card-url">
+                <a href="./hakidame/gakusei-jichi" className="btn4">
+                  ページを開く
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
         {/* ---- */}
       </div>
       </div>

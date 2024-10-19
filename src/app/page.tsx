@@ -119,6 +119,7 @@ export default function Home() {
         ></script>
         <h2 className="color">最近の記事</h2>
         <ul>
+        <li>2024年10月20日： <a className="btn4" href="./hakidame/gakusei-jichi">授業料値上げ報道に関する私見：なぜか喧嘩腰の「学生自治の再建」再考</a></li>
         <li>2024年10月04日： <a className="btn4" href="https://kacchan-docs.vercel.app/">地球科学や物理・プログラミング関連のことはこちらに移転</a></li>
           <li>2024年9月20日： <a className="btn4" href="./hakidame/gakuhi">授業料値上げ報道に関する私見：学生自治会の「対話」姿勢を問う</a></li>
           <li>2024年9月19日： <a className="btn4" href="https://kacchan-docs.vercel.app/docs/physics/gogatsusai">五月祭展示：シミュレーション科学の世界へようこそ</a></li>
