@@ -32,13 +32,7 @@ export default function Home() {
                   <span></span>
                   <UTAS />
                   <span>日</span>
-                  だそうです（2027年4月12日）が、
-                  <a
-                    className="btn4"
-                    href="https://ansaikuropedia.org/wiki/%E8%AA%B0%E3%82%82%E6%B0%97%E3%81%AB%E3%81%97%E3%81%AA%E3%81%84"
-                  >
-                    誰も気にしない。
-                  </a>
+                  だそうです（2027年4月12日）が、誰も気にしない。  
                 </p>
               </div>
             </section>

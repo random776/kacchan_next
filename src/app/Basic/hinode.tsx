@@ -13,7 +13,7 @@ export default function Base() {
   return (
     <>
       <p>
-        本日 {getYear} 年 {now.getMonth() + 1} 月 {now.getDate()} 日
+        <strong>きょうは{getYear}年{now.getMonth() + 1}月{now.getDate()}日</strong>
       </p>
       <p>
         {getYear}年の <span className="card__utokyo__day">{float}</span> ％が終わりましたが、まだ大丈夫ですよね。
