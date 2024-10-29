@@ -1,35 +1,95 @@
-/** 省略してます **/
-
-body {
-  --scroll-gap: 30px;
-}
-
-@keyframes infiniteScroll {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(calc(-100% - var(--scroll-gap) / 2));
-    }
-  }
-
-  .scroll_track {
-    width: max-content;
-    min-width: 100%;  
-    animation: infiniteScroll 30s linear infinite;
-  }
-
-.scroll_box {
+.slideshow {
+  display: flex; /* タイトルとスライド内容を横並びに */
+  position: relative;
   overflow: hidden;
-  height: 22.5px;
-  padding: 5px;
-  border: 2px solid rgb(0, 147, 155);
-  background: rgb(243, 243, 243);
-  border-radius: 3px;
-  
+  gap: 20px; /* タイトルとスライドの間隔 */
+  align-items: center; /* タイトルとスライドの縦方向を揃える */
 }
 
-.scroll_cont {
-  padding: 0px 150px; 
-  white-space: nowrap;
+.title {
+  font-size: 1.3em;
+  text-align: center;
+  padding: 10px;
+  flex: 0 0 auto; /* タイトルの幅を固定 */
+}
+
+
+@media screen and (max-width: 560px) {
+  .slideshow {
+    display: table;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .title {
+    width: 100%;
+    display: none;
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+/* :::::: slideContents :::::: */
+.slideContents {
+  display: flex; /* 横並びに配置 */
+  position: relative;
+  -webkit-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  border: solid #999999;
+  border-width:0px 0px 0px 1.5px;
+  min-height: 110px;
+}
+.slideContents section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.slideContents section div {
+  display: table;
+  max-width: 100%;
+  height: auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 560px) {
+  .slideContents {
+    display: flex; /* 横並びに配置 */
+    position: relative;
+    -webkit-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    border:solid #999999 ;
+    border-width:0px 0px 0px 0px;
+  }
+}
+
+/* :::::: mechanism :::::: */
+.slideContents #slide1 {
+  position: relative;
+}
+.slideContents section {
+  animation: autoplay 16s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+@keyframes autoplay {
+  from,
+  to,
+  42% {
+    transform: none;
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  50.001%,
+  92% {
+    transform: translateX(100%);
+  }
+}
+.slideContents #slide1 {
+  animation-delay: 0s;
+}
+.slideContents #slide2 {
+  animation-delay: -8s;
 }

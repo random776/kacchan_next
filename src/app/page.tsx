@@ -8,33 +8,45 @@ import "./styles/notice.css";
 import "./styles/news.css";
 import "./styles/scroll.css";
 
+import UTAS from "./Basic/UTokyo";
+import Base from "./Basic/hinode";
+
 export default function Home() {
   return (
     <main>
       <Header />
       <div id="oshirase-viewer">
-        <div className="scroll_box">
-          <div className="scroll_wrap">
-            <div className="scroll_track">
-              <span className="scroll_cont">
-                <span style={{ color: "blue" }}>
-                  ★本サイト 仕様変更のお知らせ★
-                </span>
-                本サイトはこれまでViteで動かしていましたが、フレームワークを
-                <span style={{ color: "blue" }}>Next.js</span>
-                に変更しました。（2024年9月14日）
-              </span>
-              <span className="scroll_cont">
-                <span style={{ color: "blue" }}>
-                  ★本サイト 名称変更のお知らせ★
-                </span>
-                「
-                <span style={{ color: "red" }}>
-                  地物学科かっちゃんの物理と雑多なことの掃き溜め
-                </span>
-                」に改称しました。（2024年9月16日）
-              </span>
-            </div>
+        <div className="slideshow">
+          <div className="title">
+            <p>本サイト</p>
+            <p>関連情報</p>
+          </div>
+          <div className="slideContents">
+            <section id="slide1">
+              <div>
+                <p>
+                  <strong>東京大学 150周年まで</strong>
+                </p>
+                <p>
+                  東大150周年まで、
+                  <span></span>
+                  <UTAS />
+                  <span>日</span>
+                  だそうです（2027年4月12日）が、
+                  <a
+                    className="btn4"
+                    href="https://ansaikuropedia.org/wiki/%E8%AA%B0%E3%82%82%E6%B0%97%E3%81%AB%E3%81%97%E3%81%AA%E3%81%84"
+                  >
+                    誰も気にしない。
+                  </a>
+                </p>
+              </div>
+            </section>
+            <section id="slide2">
+              <div>
+                <Base />
+              </div>
+            </section>
           </div>
         </div>
       </div>
@@ -42,13 +54,11 @@ export default function Home() {
       <div className="sonota">
         <h2 className="color">このサイトの作成者について</h2>
         <p>
-          このサイトは、
-          かっちゃん（
+          このサイトは、 かっちゃん（
           <a className="btn4" href="https://x.com/kacchan_f90">
             @kacchan_f90
           </a>
-          ）
-          のプロフィールの延長として開設しているものです。
+          ） のプロフィールの延長として開設しているものです。
         </p>
         <ul>
           <li>
@@ -119,10 +129,33 @@ export default function Home() {
         ></script>
         <h2 className="color">最近の記事</h2>
         <ul>
-        <li>2024年10月20日： <a className="btn4" href="./hakidame/gakusei-jichi">授業料値上げ報道に関する私見：なぜか喧嘩腰の「学生自治の再建」再考</a></li>
-        <li>2024年10月04日： <a className="btn4" href="https://kacchan-docs.vercel.app/">地球科学や物理・プログラミング関連のことはこちらに移転</a></li>
-          <li>2024年9月20日： <a className="btn4" href="./hakidame/gakuhi">授業料値上げ報道に関する私見：学生自治会の「対話」姿勢を問う</a></li>
-          <li>2024年9月19日： <a className="btn4" href="https://kacchan-docs.vercel.app/docs/physics/gogatsusai">五月祭展示：シミュレーション科学の世界へようこそ</a></li>
+          <li>
+            2024年10月20日：{" "}
+            <a className="btn4" href="./hakidame/gakusei-jichi">
+              授業料値上げ報道に関する私見：なぜか喧嘩腰の「学生自治の再建」再考
+            </a>
+          </li>
+          <li>
+            2024年10月04日：{" "}
+            <a className="btn4" href="https://kacchan-docs.vercel.app/">
+              地球科学や物理・プログラミング関連のことはこちらに移転
+            </a>
+          </li>
+          <li>
+            2024年9月20日：{" "}
+            <a className="btn4" href="./hakidame/gakuhi">
+              授業料値上げ報道に関する私見：学生自治会の「対話」姿勢を問う
+            </a>
+          </li>
+          <li>
+            2024年9月19日：{" "}
+            <a
+              className="btn4"
+              href="https://kacchan-docs.vercel.app/docs/physics/gogatsusai"
+            >
+              五月祭展示：シミュレーション科学の世界へようこそ
+            </a>
+          </li>
         </ul>
       </div>
       <SubMenu />
