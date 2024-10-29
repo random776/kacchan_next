@@ -37,7 +37,7 @@
   overflow: hidden;
   border: solid #999999;
   border-width:0px 0px 0px 1.5px;
-  min-height: 110px;
+  min-height: 80px;
 }
 .slideContents section {
   position: absolute;
@@ -49,7 +49,7 @@
   display: table;
   max-width: 100%;
   height: auto;
-  padding: 0 30px;
+  padding: 0 20px;
   box-sizing: border-box;
   vertical-align: middle;
 }
