@@ -4,6 +4,7 @@
   overflow: hidden;
   gap: 20px; /* タイトルとスライドの間隔 */
   align-items: center; /* タイトルとスライドの縦方向を揃える */
+  font-size: 90%;
 }
 
 .title {
@@ -23,9 +24,12 @@
 
   .title {
     width: 100%;
-    display: none;
-    text-align: center;
-    font-size: 1.5em;
+    text-align: left;
+    font-size: 1.2em;
+  }
+
+  .title p {
+    display: inline;
   }
 }
 /* :::::: slideContents :::::: */
@@ -37,7 +41,7 @@
   overflow: hidden;
   border: solid #999999;
   border-width:0px 0px 0px 1.5px;
-  min-height: 80px;
+  min-height: 90px;
 }
 .slideContents section {
   position: absolute;
@@ -64,6 +68,13 @@
     border:solid #999999 ;
     border-width:0px 0px 0px 0px;
   }
+
+  .slideContents section {
+    background-color: white;
+    font-size: 90%;
+    height: 90px;
+    border-radius: 7px;
+  }
 }
 
 /* :::::: mechanism :::::: */
@@ -71,18 +82,18 @@
   position: relative;
 }
 .slideContents section {
-  animation: autoplay 16s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  animation: autoplay 24s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
 }
 @keyframes autoplay {
   from,
   to,
-  42% {
+  25% {
     transform: none;
   }
-  50% {
+  33.33% {
     transform: translateX(-100%);
   }
-  50.001%,
+  33.334%,
   92% {
     transform: translateX(100%);
   }
@@ -91,5 +102,8 @@
   animation-delay: 0s;
 }
 .slideContents #slide2 {
+  animation-delay: -16s;
+}
+.slideContents #slide3 {
   animation-delay: -8s;
 }

@@ -24,9 +24,9 @@ export default function Home() {
           <div className="slideContents">
             <section id="slide1">
               <div>
-                <p>
-                  <strong>東京大学 150周年まで</strong>
-                </p>
+                <h3>
+                  東京大学 150周年まで
+                </h3>
                 <p>
                   東大150周年まで、
                   <span></span>
@@ -39,6 +39,12 @@ export default function Home() {
             <section id="slide2">
               <div>
                 <Base />
+              </div>
+            </section>
+            <section id="slide3">
+              <div>
+                <h3>基本平均点計算ツール</h3>
+                <p>前期教養学部用基本平均点簡易計算ツールは<a className="btn4" href="/hakidame/kihon-heikin">こちら</a>。</p>
               </div>
             </section>
           </div>

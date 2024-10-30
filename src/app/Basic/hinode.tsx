@@ -12,9 +12,9 @@ const float = Math.floor(percentage * Math.pow(10, n)) / Math.pow(10, n);
 export default function Base() {
   return (
     <>
-      <p>
-        <strong>きょうは{getYear}年{now.getMonth() + 1}月{now.getDate()}日</strong>
-      </p>
+      <h3>
+        きょうは{getYear}年{now.getMonth() + 1}月{now.getDate()}日
+      </h3>
       <p>
         {getYear}年の <span className="card__utokyo__day">{float}</span> ％が終わりましたが、まだ大丈夫ですよね。
       </p>
