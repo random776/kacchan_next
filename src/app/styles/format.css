@@ -2,6 +2,8 @@ body {
   font-family: "游ゴシック Light", sans-serif;
   font-size: 15px;
   margin: 0px;
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 header {
