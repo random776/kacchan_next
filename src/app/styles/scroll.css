@@ -1,3 +1,9 @@
+body {
+  font-family: "游ゴシック Light", sans-serif;
+  font-size: 15px;
+  margin: 0px;
+}
+
 .slideshow {
   display: flex; /* タイトルとスライド内容を横並びに */
   position: relative;
@@ -8,7 +14,7 @@
 }
 
 .title {
-  font-size: 1.3em;
+  font-size: 130%;
   text-align: center;
   padding: 10px;
   flex: 0 0 auto; /* タイトルの幅を固定 */
@@ -25,7 +31,7 @@
   .title {
     width: 100%;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 120%;
   }
 
   .title p {

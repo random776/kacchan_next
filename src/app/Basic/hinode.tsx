@@ -1,9 +1,10 @@
-const now = new Date(); //今の日時
+const now = new Date(); // 今の日時
+now.setHours(now.getHours() + 9);
 const getYear = now.getFullYear();
-const target = new Date(`${getYear + 1}/1/1 0:00:00`);
-const target2 = new Date(`${getYear}/1/1 0:00:00`);
-const remain_time = target.getTime() - now.getTime(); //差分を取る（ミリ秒で返ってくる）
-const all_time = target.getTime() - target2.getTime();
+const target = new Date(`${getYear}/12/31 23:59:59`); // 今年の終わり
+const target2 = new Date(`${getYear}/1/1 0:00:00`); // 今年の始まり
+const remain_time = target.getTime() - now.getTime(); // 残り時間（ミリ秒で返る）
+const all_time = target.getTime() - target2.getTime(); // 年度全体の時間
 const percentage = (1 - remain_time / all_time) * 100;
 console.log(percentage);
 const n = 1; // 小数点第n位まで残す

@@ -1,6 +1,7 @@
 
 export default function UTAS() {
         const now = new Date(); //今の日時
+        now.setHours(now.getHours() + 9);
         const target = new Date("2027/4/12 0:00:00");
         const remain_time = target.getTime() - now.getTime(); //差分を取る（ミリ秒で返ってくる）
         if (remain_time < 0) {
