@@ -28,7 +28,7 @@ h2 {
 }
 
 .color2 {
-  font-size: 130%;
+  font-size: 140%;
   border-bottom: solid 3px rgb(135, 235, 160);
   position: relative;
 }
@@ -43,7 +43,7 @@ h2 {
 }
 
 .color3 {
-  font-size: 140%;
+  font-size: 130%;
   border-bottom: solid 3px rgb(29, 255, 195);
   position: relative;
 }
@@ -58,7 +58,7 @@ h2 {
 }
 
 .color4 {
-  font-size: 140%;
+  font-size: 120%;
   text-align: center;
 }
 
@@ -139,6 +139,9 @@ h2 {
 }
 
 @media screen and (max-width: 560px) {
+  body {
+    font-size: 14px; /* 横向きでも適切なフォントサイズを指定 */
+  }
   .content img {
     width: 100%;
     margin: 0%;
