@@ -24,27 +24,31 @@ export default function Home() {
           <div className="slideContents">
             <section id="slide1">
               <div>
-                <h3>
-                  東京大学 150周年まで
-                </h3>
+                <Base />
+              </div>
+            </section>
+            <section id="slide2">
+              <div>
+                <h3>東京大学 150周年まで</h3>
                 <p>
                   東大150周年まで、
                   <span></span>
                   <UTAS />
                   <span>日</span>
-                  だそうです（2027年4月12日）が、誰も気にしない。  
+                  だそうです（2027年4月12日）が、誰も気にしない。
                 </p>
-              </div>
-            </section>
-            <section id="slide2">
-              <div>
-                <Base />
               </div>
             </section>
             <section id="slide3">
               <div>
                 <h3>基本平均点計算ツール</h3>
-                <p>前期教養学部用基本平均点簡易計算ツールは<a className="btn4" href="/hakidame/kihon-heikin">こちら</a>。</p>
+                <p>
+                  前期教養学部用基本平均点簡易計算ツールは
+                  <a className="btn4" href="/hakidame/kihon-heikin">
+                    こちら
+                  </a>
+                  。
+                </p>
               </div>
             </section>
           </div>
