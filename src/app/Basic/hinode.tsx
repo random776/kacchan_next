@@ -16,6 +16,7 @@ export default function Base() {
       <h3>
         きょうは{getYear}年{now.getMonth() + 1}月{now.getDate()}日
       </h3>
+      <p>{now.toString()}</p>
       <p>
         {getYear}年の <span className="card__utokyo__day">{float}</span> ％が終わりましたが、まだ大丈夫ですよね。
       </p>
