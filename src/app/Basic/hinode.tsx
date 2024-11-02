@@ -24,7 +24,7 @@ export default function Base() {
 
   const calculateTimes = () => {
     const now = new Date(); // 今の日時
-    now.setHours(now.getHours() + 9);
+    // now.setHours(now.getHours() + 9);
     const getYear = now.getFullYear();
     const target = new Date(`${getYear}/12/31 23:59:59`); // 今年の終わり
     const target2 = new Date(`${getYear}/1/1 0:00:00`); // 今年の始まり
