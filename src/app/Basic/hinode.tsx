@@ -62,7 +62,7 @@ export default function Base() {
 
   useEffect(() => {
     calculateTimes(); // 初回実行
-    const interval = setInterval(calculateTimes, 1000); // 20秒ごとに実行
+    const interval = setInterval(calculateTimes, 5000); // 20秒ごとに実行
 
     return () => clearInterval(interval); // コンポーネントがアンマウントされたときにクリーンアップ
   }, []);
