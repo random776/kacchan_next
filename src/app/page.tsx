@@ -134,6 +134,12 @@ export default function Home() {
         <h2 className="color">最近の記事</h2>
         <ul>
           <li>
+            2024年11月9日：{" "}
+            <a className="btn4" href="./hakidame/daigaku-yogo">
+              授業料値上げ報道に関する私見：「値上げ」決定下であえて「値下げ」を論じる
+            </a>
+          </li>
+          <li>
             2024年10月20日：{" "}
             <a className="btn4" href="./hakidame/gakusei-jichi">
               授業料値上げ報道に関する私見：なぜか喧嘩腰の「学生自治の再建」再考
