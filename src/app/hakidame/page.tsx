@@ -244,32 +244,6 @@ export default function Result() {
             </div>
           </div>
         </div>
-        {/* <!--  --> */}
-        <div className="card_format">
-          <div className="card card-skin">
-            <div className="card__textbox">
-              <div className="card__titletext">
-                かっちゃん旧版サイト
-              </div>
-              <div className="card__overviewtext">
-                黒歴史の巣窟。閲覧注意。あの頃からはだいぶ僕も変わってしまった、とも思う。
-              </div>
-              <span className="card-url">
-                <a href="https://random776.github.io/kacchan_home/" className="btn4">
-                  ページを開く
-                </a>
-              </span>
-              <span className="card-url" style={{ left: "120px" }}>
-                <a
-                  href="https://github.com/random776/kacchan_home"
-                  className="btn4"
-                >
-                  ソースコードを見る
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
         {/* ---- */}
       </div>
       </div>
