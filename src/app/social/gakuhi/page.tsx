@@ -21,7 +21,7 @@ export default function Result() {
     <>
       <Header2 />
       <div className="sonota">
-        <h2 className="color">東京大学授業料値上げ案提出報道に関する私見</h2>
+        <h2 className="color">学生自治会の「対話」姿勢を問う</h2>
         <p>投稿：2024年9月20日 最終更新：2024年9月22日</p>
         <div className="section_box">
           2024年9月10日、東京大学は学部生と修士生の授業料を約10万円値上げする案を各部会に提出しました。その報道に関する管理者の私見です。なお、学科その他の団体の意見を代表するものではありません。

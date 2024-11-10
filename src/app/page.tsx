@@ -91,7 +91,9 @@ export default function Home() {
             最近読んでいる本：
             <ul>
               <li>柴田 一成ほか (2023). 宇宙電磁流体力学の基礎. 日本評論社.</li>
-              <li>近藤 豊ほか (2024). 雲の物理とエアロゾル. 東京大学出版会.</li>
+              <li>
+                小倉義光 (1999). 一般気象学（第2版補訂版）. 東京大学出版会.
+              </li>
             </ul>
           </li>
           <li>
@@ -106,6 +108,17 @@ export default function Home() {
             <a className="btn4" href="https://github.com/random776">
               こちら
             </a>
+            <ul>
+              <li>
+                <a
+                  className="btn4"
+                  href="https://github.com/random776/kacchan_next"
+                >
+                  本サイトのソースコード
+                </a>{" "}
+                （GitHubのページに飛びます）
+              </li>
+            </ul>
           </li>
           <li>
             Twitterのプロフ写真：
@@ -134,27 +147,18 @@ export default function Home() {
         <h2 className="color">最近の記事</h2>
         <ul>
           <li>
-            2024年11月9日：{" "}
-            <a className="btn4" href="./hakidame/daigaku-yogo">
-              授業料値上げ報道に関する私見：「値上げ」決定下であえて「値下げ」を論じる
-            </a>
-          </li>
-          <li>
-            2024年10月20日：{" "}
-            <a className="btn4" href="./hakidame/gakusei-jichi">
-              授業料値上げ報道に関する私見：なぜか喧嘩腰の「学生自治の再建」再考
+            2024年11月10日：{" "}
+            <a
+              className="btn4"
+              href="https://kacchan-docs.vercel.app/docs/physics/hinode"
+            >
+              本サイトの日の出・日の入り時刻の計算方法
             </a>
           </li>
           <li>
             2024年10月04日：{" "}
             <a className="btn4" href="https://kacchan-docs.vercel.app/">
               地球科学や物理・プログラミング関連のことはこちらに移転
-            </a>
-          </li>
-          <li>
-            2024年9月20日：{" "}
-            <a className="btn4" href="./hakidame/gakuhi">
-              授業料値上げ報道に関する私見：学生自治会の「対話」姿勢を問う
             </a>
           </li>
           <li>

@@ -79,7 +79,7 @@ export default function Base() {
         分　日の入り：
         <span className="card__utokyo__day">{time.hinoiriHour}</span> 時{" "}
         <span className="card__utokyo__day">{time.hinoiriMinute}</span> 分
-        （東京、あくまで概算値）
+        （東京、あくまで概算値：<a className="btn4" href="https://kacchan-docs.vercel.app/docs/physics/hinode">詳細はこちら</a>）
       </p>
     </>
   );
