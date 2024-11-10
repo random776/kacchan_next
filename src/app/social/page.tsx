@@ -7,7 +7,6 @@ import "../styles/style.css";
 import "../styles/card.css";
 import "../styles/notice.css";
 import "../styles/news.css";
-import UTAS from "../Basic/UTokyo";
 
 export default function Result() {
   return (
