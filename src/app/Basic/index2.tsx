@@ -86,20 +86,20 @@ export default function Header2() {
         </div>
         <div className="slide">
           <div className="item1">
+            <img src="/senbako.jpg" alt="B" />
+            <div className="caption">千波湖と水戸市街</div>
+          </div>
+          <div className="item2">
             <img src="/oarai.jpg" alt="A" />
             <div className="caption">大洗磯前神社（大洗町）</div>
           </div>
-          <div className="item2">
-            <img src="/jobansen.jpg" alt="B" />
-            <div className="caption">水戸駅の夕暮れと常磐線</div>
-          </div>
           <div className="item3">
-            <img src="/mito_train.jpg" alt="C" />
-            <div className="caption">桜川と常磐線（水戸市）</div>
+            <img src="/tsukuba.jpg" alt="C" />
+            <div className="caption">筑波山（つくば市）</div>
           </div>
           <div className="item4">
-            <img src="/otonebashi.jpg" alt="D" />
-            <div className="caption">利根川と県境（取手市）</div>
+            <img src="/hukuroda.jpg" alt="D" />
+            <div className="caption">袋田の滝（大子町）</div>
           </div>
         </div>
       </header>
