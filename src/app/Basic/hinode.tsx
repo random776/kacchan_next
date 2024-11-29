@@ -36,7 +36,7 @@ export default function Base() {
     // 赤緯計算
     const float = Math.floor(percentage * Math.pow(10, n)) / Math.pow(10, n);
     const delta = -0.408 * Math.cos(2 * Math.PI * (float / 100 + 0.025));
-    const cosh = (-1 / Math.tan(0.96)) * Math.tan(delta);
+    const cosh = (-Math.tan(0.623)) * Math.tan(delta);
     const h = (2 * Math.acos(cosh) * 360) / (2 * Math.PI * 15);
 
     // 近時差に関する補正
