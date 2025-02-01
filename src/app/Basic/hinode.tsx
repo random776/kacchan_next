@@ -60,6 +60,18 @@ export default function Base() {
     });
   };
 
+  console.log(time.hinodeHour, time.hinodeMinute, time.hinoiriHour, time.hinoiriMinute);
+
+  if (time.hinodeMinute == "60") {
+    time.hinodeHour += 1;
+    time.hinodeMinute = "00";
+  }
+
+  if (time.hinoiriMinute == "60") {
+    time.hinoiriHour += 1;
+    time.hinoiriMinute = "00";
+  }
+
   useEffect(() => {
     calculateTimes(); // 初回実行
     const interval = setInterval(calculateTimes, 5000); // 20秒ごとに実行
