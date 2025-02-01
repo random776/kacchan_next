@@ -2,6 +2,7 @@
 
 import Header2 from "../../Basic/index2";
 import SubMenu2 from "../../Basic/menuBar2";
+import SideBar2 from "../../Basic/sideBar2";
 import "../../styles/format.css";
 import "../../styles/style.css";
 import "../../styles/card.css";
@@ -83,6 +84,10 @@ export default function Result() {
   return (
     <>
       <Header2 />
+      <div className="main">
+        <div className="sidebar">
+          <SideBar2 />
+        </div>
       <div className="sonota">
         <h2 className="color">基本平均点簡易計算ツール</h2>
         <p>最終更新：2024年9月26日</p>
@@ -155,6 +160,7 @@ export default function Result() {
           </div>
         </div>
       </div>
+    </div>
       <SubMenu2 />
     </>
   );

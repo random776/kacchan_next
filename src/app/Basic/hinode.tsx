@@ -64,12 +64,12 @@ export default function Base() {
 
   if (time.hinodeMinute == "60") {
     time.hinodeHour += 1;
-    time.hinodeMinute = "00";
+    time.hinodeMinute = "0";
   }
 
   if (time.hinoiriMinute == "60") {
     time.hinoiriHour += 1;
-    time.hinoiriMinute = "00";
+    time.hinoiriMinute = "0";
   }
 
   useEffect(() => {

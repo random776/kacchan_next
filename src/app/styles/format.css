@@ -15,6 +15,12 @@ header {
 /* ロゴに関する部分 */
 .logo-area {
   padding: 10px;
+  text-align: center;
+  margin: auto;
+}
+
+.logo-area img {
+  width: 250px;
 }
 
 .header-logo-menu {
@@ -31,10 +37,7 @@ header {
 }
 
 /*ロゴやサイトタイトルをセンタリング*/
-.logo-area {
-  text-align: center;
-  margin: auto;
-}
+  
 
 header ul {
   overflow: hidden;
@@ -73,8 +76,43 @@ header ul {
 #nav-content ul li a {
   color: aliceblue;
 }
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 25%;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0px;
+  text-align: left;
+}
+
+.sidebar li {
+  line-height: 2;
+  border-bottom: 1px dashed #ccc;
+}
+
 .sonota {
+  width: 75%;
   margin: 10px;
+}
+
+@media screen and (min-width: 950px) {
+  .sidebar {
+    width: 20%;
+    border-right: 1px solid #ccc;
+  }
+  
+  .sonota {
+    width: 80%;
+    margin: 5px;
+  }
 }
 
 .sonota li {
@@ -335,8 +373,16 @@ header ul {
   #menu-bar {
     display: none;
   }
+
+  .sidebar {
+    display: none;
+  }
+
+  .sonota {
+    width: 100%;
+  }
   .logo {
-    width: 220px;
+    width: 180px;
   }
   .header3 a {
     font-size: 0.8rem;
@@ -414,8 +460,8 @@ header ul {
   }
 
   .logo {
-    width: 350px;
-    padding: 15px;
+    width: 250px;
+    padding: 5px;
   }
   .header3 {
     display: inline;
