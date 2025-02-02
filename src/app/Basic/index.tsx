@@ -40,6 +40,16 @@ export default function Header() {
                         共通テスト対策
                       </a>
                     </li>
+                    <li>
+                      <a href="https://kacchan-docs.vercel.app/" className="btn4">
+                        無題のノート
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://x.com/kacchan_f90" className="btn4">
+                        Twitter（現:X）
+                      </a>
+                    </li>
                   </ul>
                 </header>
                 <a href="#tours" className="popup__close">

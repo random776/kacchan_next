@@ -1,30 +1,30 @@
 export default function SideBar() {
   return (
     <>
-      <div className="under">
+      <div className="under" id="sidebar">
         <ul>
           <li>
-            <a href="../" className="btn4">
+            <a href="../#sidebar" className="btn4">
               HOME
             </a>
           </li>
           <li>
-            <a href="../hakidame" className="btn4">
+            <a href="../hakidame#sidebar" className="btn4">
               掃き溜め
             </a>
           </li>
           <li>
-            <a href="../chibutsu" className="btn4">
+            <a href="../chibutsu#sidebar" className="btn4">
               地物関連
             </a>
           </li>
           <li>
-            <a href="../link" className="btn4">
+            <a href="../link#sidebar" className="btn4">
               外部リンク
             </a>
           </li>
           <li>
-            <a href="../test" className="btn4">
+            <a href="../test#sidebar" className="btn4">
               共通テスト対策
             </a>
           </li>

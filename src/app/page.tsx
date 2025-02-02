@@ -21,7 +21,7 @@ export default function Home() {
         <div className="sidebar">
           <SideBar />
         </div>
-        <div className="sonota">
+        <div className="sonota_mainpage">
         <div id="oshirase-viewer">
         <div className="slideshow">
           <div className="title">
@@ -61,6 +61,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="mainpage_container">
           <h2 className="color">このサイトの作成者について</h2>
           <p>
             このサイトは、 かっちゃん（
@@ -180,6 +181,7 @@ export default function Home() {
           </ul>
         </div>
       </div>
+      </div>  
       <SubMenu />
     </main>
   );
